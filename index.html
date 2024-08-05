@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html{
+        scroll-behavior:smooth;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      body {
+        background-color: hsl(30, 38%, 92%);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+  
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      }
+
+      .content{
+        padding: 10px;
+      }
+
+      .pic {
+        width: 100%;
+        height: 100%;
+      }
+
+      .perfume-text {
+        display: flex;
+        height: 50px;
+        text-transform: capitalize;
+        place-items: center;
+        letter-spacing: 7px;
+        color: hsl(228, 12%, 48%);
+      }
+      .text {
+        font-weight: bold;
+        font-size: x-large;
+      }
+      .description {
+        font-size: 14px;
+        margin-top: 15px;
+      }
+
+      .details {
+        margin-bottom: 30px;
+        color: hsl(228, 12%, 48%);
+      }
+      .price-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 30px;
+      }
+
+      .price-1 {
+        color: hsl(212, 21%, 14%);
+      }
+
+      .price-2 {
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%);
+      }
+
+      .add {
+        display: flex;
+        background-color: hsl(158, 36%, 37%);
+        padding: 10px;
+        justify-content: center;
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+
+      .add:hover {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <img src="./images/image-product-mobile.jpg" class="pic" alt="" />
+      <section class="content">
+        <p class="perfume-text">PERFUME</p>
+
+        <h1>Gabriella Essence Eau De Parfum</h1>
+
+        <div class="description">
+          <p class="details">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge,Perfumer-Creator for the House of CHANEL.
+          </p>
+        </div>
+
+        <div>
+          <div class="price-wrapper">
+            <h2 class="price-1">$149.99</h2>
+
+            <small class="price-2">$166.99</small>
+          </div>
+
+          <div class="add">Add to Cart</div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
